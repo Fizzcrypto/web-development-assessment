@@ -1,0 +1,16 @@
+body {
+    background-color: #f3fff5;
+    color: #213529;
+    font-family: Arial, sans-serif;
+    margin: 40px;
+}
+
+h1, h2 {
+    color: #176b3a;
+}
+
+.section {
+    border-bottom: 2px solid #66a87c;
+    padding: 8px 0;
+    margin-top: 15px;
+}
