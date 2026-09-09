@@ -1,0 +1,43 @@
+body {
+    font-family: Arial;
+    max-width: 800px;
+    margin: 20px;
+}
+
+h1 {
+    border: 3px solid red;
+    margin: 10px;
+    padding: 8px;
+}
+
+h2 {
+    border: 3px dashed blue;
+    margin: 12px;
+    padding: 10px;
+}
+
+h3 {
+    border: 3px dotted green;
+    margin: 14px;
+    padding: 12px;
+}
+
+h4 {
+    border: 4px double orange;
+    margin: 16px;
+    padding: 14px;
+}
+
+h5 {
+    border: 2px solid purple;
+    margin: 18px;
+    padding: 16px;
+    font-size: 16px;
+}
+
+h6 {
+    border: 2px dashed teal;
+    margin: 20px;
+    padding: 18px;
+    font-size: 14px;
+}
