@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Organisational Matrix</title>
+  <style>
+    body { font-family: Arial; }
+    table { border-collapse: collapse; }
+    th, td { border: 1px solid black; padding: 10px; }
+    th { background-color: #ffcc99; font-weight: normal;
+         text-align: center; }
+    td { text-align: center; font-size: 24px; }
+    .orange { background-color: #ff9900; font-weight: bold; }
+    .yellow { background-color: #ffcc00; font-weight: bold; }
+    .vertical { display: inline-block; width: 110px;
+                margin: 0 -45px; transform: rotate(-90deg); }
+  </style>
+</head>
+<body>
+  <table>
+    <tr>
+      <th rowspan="2" colspan="2" class="orange">
+        Organisational<br>Matrix</th>
+      <th colspan="6" class="yellow">Product</th>
+    </tr>
+    <tr>
+      <th>Project 1</th><th>Project 2</th><th>Project 3</th>
+      <th>Project 4</th><th>Project 5</th><th>Project 6</th>
+    </tr>
+    <tr>
+      <th rowspan="5" class="yellow">
+        <span class="vertical">Department</span></th>
+      <th scope="row">Operations</th>
+      <td>&#10004;</td><td>&#10006;</td><td>&#10004;</td>
+      <td>&#10004;</td><td>&#10006;</td><td>&#10006;</td>
+    </tr>
+    <tr>
+      <th scope="row">Marketing</th>
+      <td>&#10006;</td><td>&#10004;</td><td>&#10006;</td>
+      <td>&#10006;</td><td>&#10004;</td><td>&#10006;</td>
+    </tr>
+    <tr>
+      <th scope="row">Accounts</th>
+      <td>&#10004;</td><td>&#10004;</td><td>&#10006;</td>
+      <td>&#10004;</td><td>&#10004;</td><td>&#10004;</td>
+    </tr>
+    <tr>
+      <th scope="row">HR</th>
+      <td>&#10006;</td><td>&#10006;</td><td>&#10004;</td>
+      <td>&#10006;</td><td>&#10004;</td><td>&#10004;</td>
+    </tr>
+    <tr>
+      <th scope="row">IT</th>
+      <td>&#10006;</td><td>&#10004;</td><td>&#10004;</td>
+      <td>&#10006;</td><td>&#10004;</td><td>&#10004;</td>
+    </tr>
+  </table>
+</body>
+</html>
