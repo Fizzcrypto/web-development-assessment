@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8">
+<title>Source code</title>
+<style>
+body { margin: 24px; color: #222222; background: white;
+       font-family: Arial, sans-serif; }
+h1 { font-size: 20px; }
+pre { font: 15px/1.4 "Courier New", monospace; white-space: pre-wrap; }
+</style></head><body>
+<h1>practical_09_part_3.html</h1>
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;title&gt;Styled Accessible Form&lt;/title&gt;
+  &lt;style&gt;
+    body { font-family: Arial, sans-serif; margin: 30px;
+           background-color: #eeeeee; color: #222222; }
+    form { max-width: 460px; padding: 20px; background-color: white;
+           border: 1px solid #aaaaaa; }
+    fieldset { margin-bottom: 15px; padding: 12px;
+               border: 1px solid #aaaaaa; }
+    legend { font-weight: bold; }
+    label { line-height: 1.8; }
+    input[type=&quot;text&quot;], input[type=&quot;password&quot;] {
+      width: 95%; padding: 7px; border: 1px solid #777777;
+    }
+    input[type=&quot;submit&quot;], input[type=&quot;reset&quot;] {
+      padding: 8px 15px; margin-right: 8px; cursor: pointer;
+    }
+    input:focus { outline: 2px solid #333333; }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt;Newsletter Form&lt;/h1&gt;
+&lt;p&gt;Practice form only. Use made-up details.&lt;/p&gt;
+&lt;form onsubmit=&quot;alert(&#x27;Practice form completed.&#x27;); return false;&quot;&gt;
+  &lt;fieldset&gt;
+    &lt;legend&gt;Your details&lt;/legend&gt;
+
+  &lt;p&gt;
+    &lt;label for=&quot;email&quot;&gt;Email address&lt;/label&gt;&lt;br&gt;
+    &lt;input type=&quot;text&quot; id=&quot;email&quot; name=&quot;email&quot; required&gt;
+  &lt;/p&gt;
+
+  &lt;p&gt;
+    &lt;label for=&quot;password&quot;&gt;Practice password&lt;/label&gt;&lt;br&gt;
+    &lt;input type=&quot;password&quot; id=&quot;password&quot; name=&quot;password&quot;&gt;
+  &lt;/p&gt;
+  &lt;/fieldset&gt;
+
+  &lt;fieldset&gt;
+    &lt;legend&gt;Newsletters&lt;/legend&gt;
+    &lt;input type=&quot;checkbox&quot; id=&quot;web&quot; name=&quot;newsletter&quot; value=&quot;web&quot;&gt;
+    &lt;label for=&quot;web&quot;&gt;Web development&lt;/label&gt;&lt;br&gt;
+    &lt;input type=&quot;checkbox&quot; id=&quot;python&quot; name=&quot;newsletter&quot; value=&quot;python&quot;&gt;
+    &lt;label for=&quot;python&quot;&gt;Python&lt;/label&gt;
+  &lt;/fieldset&gt;
+  &lt;fieldset&gt;
+    &lt;legend&gt;Favourite colour&lt;/legend&gt;
+    &lt;input type=&quot;radio&quot; id=&quot;blue&quot; name=&quot;colour&quot; value=&quot;blue&quot;&gt;
+    &lt;label for=&quot;blue&quot;&gt;Blue&lt;/label&gt;&lt;br&gt;
+    &lt;input type=&quot;radio&quot; id=&quot;green&quot; name=&quot;colour&quot; value=&quot;green&quot;&gt;
+    &lt;label for=&quot;green&quot;&gt;Green&lt;/label&gt;
+  &lt;/fieldset&gt;
+
+  &lt;p&gt;
+    &lt;input type=&quot;submit&quot; value=&quot;Subscribe&quot;&gt;
+    &lt;input type=&quot;reset&quot; value=&quot;Reset&quot;&gt;
+  &lt;/p&gt;
+&lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+</body></html>

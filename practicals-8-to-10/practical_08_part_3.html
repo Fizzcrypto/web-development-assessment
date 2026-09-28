@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Table Styled with CSS</title>
+  <style type="text/css">
+    body { font-family: Arial, sans-serif; margin: 30px;
+           background-color: #eeeeee; color: #222222; }
+    table { width: 600px; max-width: 100%; border-collapse: collapse;
+            background-color: white; }
+    caption { font-weight: bold; padding: 10px; text-align: left; }
+    th, td { border: 1px solid #777777; padding: 10px;
+             text-align: left; }
+    thead { background-color: #333333; color: white; }
+    tbody tr:nth-child(even) { background-color: #dddddd; }
+    tfoot { background-color: #cccccc; font-weight: bold; }
+  </style>
+</head>
+<body>
+<h1>Table Styled with CSS</h1>
+<table>
+  <caption>Example Study Supplies</caption>
+  <thead>
+    <tr>
+      <th>Item</th><th>Quantity</th><th>Cost AUD</th>
+    </tr>
+  </thead>
+  <tfoot>
+    <tr>
+      <th>Total</th><td>6</td><td>11.00</td>
+    </tr>
+  </tfoot>
+  <tbody>
+    <tr>
+      <td>Notebook</td><td>2</td><td>6.00</td>
+    </tr>
+    <tr>
+      <td>Pen</td><td>3</td><td>3.00</td>
+    </tr>
+    <tr>
+      <td>Folder</td><td>1</td><td>2.00</td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>

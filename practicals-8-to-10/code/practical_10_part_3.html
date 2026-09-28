@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8">
+<title>Source code</title>
+<style>
+body { margin: 24px; color: #222222; background: white;
+       font-family: Arial, sans-serif; }
+h1 { font-size: 20px; }
+pre { font: 15px/1.4 "Courier New", monospace; white-space: pre-wrap; }
+</style></head><body>
+<h1>practical_10_part_3.html</h1>
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;title&gt;Changing Text with JavaScript&lt;/title&gt;
+  &lt;style&gt;
+    body { font-family: Arial, sans-serif; margin: 30px;
+           background-color: #eeeeee; color: #222222; }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt;Changing Text with JavaScript&lt;/h1&gt;
+&lt;p id=&quot;demo&quot;&gt;This is the original text.&lt;/p&gt;
+&lt;button type=&quot;button&quot; onclick=&quot;changeText()&quot;&gt;Change text&lt;/button&gt;
+&lt;script&gt;
+  function changeText() {
+    document.getElementById(&quot;demo&quot;).innerHTML = &quot;I changed the text!&quot;;
+  }
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+</body></html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>More Form Controls</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 30px;
+           background-color: #eeeeee; color: #222222; }
+  </style>
+</head>
+<body>
+<h1>Newsletter Form</h1>
+<p>Practice form only. Use made-up details.</p>
+<form onsubmit="alert('Practice form completed.'); return false;">
+
+  <p>
+    <label for="email">Email address</label><br>
+    <input type="text" id="email" name="email" required>
+  </p>
+
+  <p>Choose your newsletters</p>
+  <input type="checkbox" id="web" name="newsletter" value="web">
+  <label for="web">Web development</label><br>
+  <input type="checkbox" id="python" name="newsletter" value="python">
+  <label for="python">Python</label>
+  <p>Choose your favourite colour</p>
+  <input type="radio" id="blue" name="colour" value="blue">
+  <label for="blue">Blue</label><br>
+  <input type="radio" id="green" name="colour" value="green">
+  <label for="green">Green</label>
+
+  <p>
+    <label for="password">Practice password</label><br>
+    <input type="password" id="password" name="password">
+  </p>
+
+  <p>
+    <input type="submit" value="Subscribe">
+    <input type="reset" value="Reset">
+  </p>
+</form>
+</body>
+</html>

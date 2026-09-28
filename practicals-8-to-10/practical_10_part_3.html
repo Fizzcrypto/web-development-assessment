@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Changing Text with JavaScript</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 30px;
+           background-color: #eeeeee; color: #222222; }
+  </style>
+</head>
+<body>
+<h1>Changing Text with JavaScript</h1>
+<p id="demo">This is the original text.</p>
+<button type="button" onclick="changeText()">Change text</button>
+<script>
+  function changeText() {
+    document.getElementById("demo").innerHTML = "I changed the text!";
+  }
+</script>
+</body>
+</html>

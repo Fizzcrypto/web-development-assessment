@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Styled Accessible Form</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 30px;
+           background-color: #eeeeee; color: #222222; }
+    form { max-width: 460px; padding: 20px; background-color: white;
+           border: 1px solid #aaaaaa; }
+    fieldset { margin-bottom: 15px; padding: 12px;
+               border: 1px solid #aaaaaa; }
+    legend { font-weight: bold; }
+    label { line-height: 1.8; }
+    input[type="text"], input[type="password"] {
+      width: 95%; padding: 7px; border: 1px solid #777777;
+    }
+    input[type="submit"], input[type="reset"] {
+      padding: 8px 15px; margin-right: 8px; cursor: pointer;
+    }
+    input:focus { outline: 2px solid #333333; }
+  </style>
+</head>
+<body>
+<h1>Newsletter Form</h1>
+<p>Practice form only. Use made-up details.</p>
+<form onsubmit="alert('Practice form completed.'); return false;">
+  <fieldset>
+    <legend>Your details</legend>
+
+  <p>
+    <label for="email">Email address</label><br>
+    <input type="text" id="email" name="email" required>
+  </p>
+
+  <p>
+    <label for="password">Practice password</label><br>
+    <input type="password" id="password" name="password">
+  </p>
+  </fieldset>
+
+  <fieldset>
+    <legend>Newsletters</legend>
+    <input type="checkbox" id="web" name="newsletter" value="web">
+    <label for="web">Web development</label><br>
+    <input type="checkbox" id="python" name="newsletter" value="python">
+    <label for="python">Python</label>
+  </fieldset>
+  <fieldset>
+    <legend>Favourite colour</legend>
+    <input type="radio" id="blue" name="colour" value="blue">
+    <label for="blue">Blue</label><br>
+    <input type="radio" id="green" name="colour" value="green">
+    <label for="green">Green</label>
+  </fieldset>
+
+  <p>
+    <input type="submit" value="Subscribe">
+    <input type="reset" value="Reset">
+  </p>
+</form>
+</body>
+</html>
