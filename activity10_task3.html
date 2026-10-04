@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Understanding JavaScript</title>
+    <script type="text/javascript">
+        var username = prompt("Please enter your name");
+
+        if (username !== null) {
+            var message = "Hello, " + username + ". Your name has";
+            var nameLen = username.length;
+
+            if (nameLen > 5) {
+                message = message + " more than";
+            } else if (nameLen < 5) {
+                message = message + " less than";
+            } else {
+                message = message + " exactly";
+            }
+
+            message = message + " 5 characters.";
+            alert(message);
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>
