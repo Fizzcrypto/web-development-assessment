@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Activity 9 - HTML Forms</title>
+</head>
+<body>
+    <h1>Activity 9 - HTML Forms</h1>
+    <h2>Exercise 1</h2>
+
+    <form method="post">
+        <p>
+            <label for="user">Username:</label>
+            <input type="text" id="user" name="user" maxlength="30">
+        </p>
+
+        <fieldset>
+            <legend>Favourite month</legend>
+            <label><input type="radio" name="month" value="January"> January</label>
+            <label><input type="radio" name="month" value="February"> February</label>
+            <label><input type="radio" name="month" value="March"> March</label><br>
+            <label><input type="radio" name="month" value="April"> April</label>
+            <label><input type="radio" name="month" value="May"> May</label>
+            <label><input type="radio" name="month" value="June"> June</label><br>
+            <label><input type="radio" name="month" value="July"> July</label>
+            <label><input type="radio" name="month" value="August"> August</label>
+            <label><input type="radio" name="month" value="September"> September</label><br>
+            <label><input type="radio" name="month" value="October"> October</label>
+            <label><input type="radio" name="month" value="November"> November</label>
+            <label><input type="radio" name="month" value="December"> December</label>
+        </fieldset>
+
+        <p>
+            <label for="social">Favourite social networking site:</label>
+            <select id="social" name="social">
+                <option value="Facebook">Facebook</option>
+                <option value="Instagram">Instagram</option>
+                <option value="LinkedIn">LinkedIn</option>
+                <option value="X">X</option>
+                <option value="TikTok">TikTok</option>
+            </select>
+        </p>
+
+        <fieldset>
+            <legend>Shipping Address</legend>
+            <p>
+                <label for="AddressLine1">Address line 1:</label>
+                <input type="text" id="AddressLine1" name="AddressLine1">
+            </p>
+            <p>
+                <label for="AddressLine2">Address line 2:</label>
+                <input type="text" id="AddressLine2" name="AddressLine2">
+            </p>
+            <p>
+                <label for="City">City:</label>
+                <input type="text" id="City" name="City">
+            </p>
+            <p>
+                <label for="State">State:</label>
+                <input type="text" id="State" name="State">
+            </p>
+            <p>
+                <label for="Zip">Zip:</label>
+                <input type="text" id="Zip" name="Zip">
+            </p>
+        </fieldset>
+
+        <input type="hidden" name="userid" value="1001">
+
+        <p>
+            <label for="pwd">Password:</label>
+            <input type="password" id="pwd" name="pwd">
+        </p>
+
+        <input type="image" src="signup.gif" alt="Sign up">
+    </form>
+
+    <h2>Exercise 2</h2>
+    <form method="post">
+        <label for="dob">Date of birth:</label>
+        <input type="date" id="dob" name="dob">
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
