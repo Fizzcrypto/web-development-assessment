@@ -3,6 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Understanding JavaScript</title>
+</head>
+<body>
+    <h1>Activity 10 - Task 3</h1>
+    <p>Enter your name in the prompt and click OK.</p>
+    <p id="result"></p>
+
     <script type="text/javascript">
         var username = prompt("Please enter your name");
 
@@ -20,9 +26,13 @@
 
             message = message + " 5 characters.";
             alert(message);
+            document.getElementById("result").textContent = message;
+        } else {
+            document.getElementById("result").textContent =
+                "No name was entered. Click Try again to start.";
         }
     </script>
-</head>
-<body>
+
+    <p><a href="activity10_task3.html">Try again</a></p>
 </body>
 </html>
