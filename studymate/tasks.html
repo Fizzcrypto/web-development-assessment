@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Add, complete and manage student assignments with StudyMate.">
+  <title>StudyMate | My Tasks</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body data-page="tasks">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <div class="header-inner container">
+      <a class="brand" href="index.html" aria-label="StudyMate home"><span class="brand-symbol" aria-hidden="true">S</span><span>StudyMate</span></a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a><a href="tasks.html" aria-current="page">My Tasks</a><a href="planner.html">Study Planner</a><a href="about.html">About &amp; Help</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main-content" class="container page-main">
+    <div class="page-heading"><p class="eyebrow">ASSIGNMENT TRACKER</p><h1>My Tasks</h1><p>Write it down, give it a deadline and take it one step at a time.</p></div>
+    <div class="two-column-layout">
+      <section class="panel form-panel" aria-labelledby="task-form-heading">
+        <div class="section-heading"><h2 id="task-form-heading">Add a new task</h2><span class="heading-accent" aria-hidden="true"></span></div>
+        <form id="task-form" novalidate>
+          <div class="field"><label for="task-name">Assignment or task <span class="required" aria-label="required">*</span></label><input id="task-name" name="taskName" type="text" maxlength="80" placeholder="e.g. Finish HTML activity" required><p class="field-hint">Up to 80 characters</p></div>
+          <div class="field"><label for="task-subject">Subject (optional)</label><input id="task-subject" name="subject" type="text" maxlength="50" placeholder="e.g. Web Development"></div>
+          <div class="field"><label for="task-due">Due date <span class="required" aria-label="required">*</span></label><input id="task-due" name="dueDate" type="date" required></div>
+          <div class="field"><label for="task-priority">Priority</label><select id="task-priority" name="priority"><option value="medium">Medium</option><option value="high">High</option><option value="low">Low</option></select></div>
+          <p class="form-message" id="task-form-message" role="status" aria-live="polite"></p>
+          <button class="button button-primary button-full" type="submit">Add task <span aria-hidden="true">+</span></button>
+        </form>
+      </section>
+      <section class="tasks-workspace" aria-labelledby="task-list-heading">
+        <div class="task-summary">
+          <div class="stat-box"><span id="stat-total" class="stat-value">0</span><span class="stat-label">Total tasks</span></div>
+          <div class="stat-box"><span id="stat-pending" class="stat-value">0</span><span class="stat-label">Still to do</span></div>
+          <div class="stat-box"><span id="stat-completed" class="stat-value">0</span><span class="stat-label">Completed</span></div>
+        </div>
+        <div class="panel list-panel">
+          <div class="list-heading"><h2 id="task-list-heading">Your assignment list</h2><span id="task-count-label" class="muted-text">0 tasks</span></div>
+          <fieldset class="filter-group"><legend class="sr-only">Filter tasks</legend><label><input type="radio" name="task-filter" value="all" checked><span>All</span></label><label><input type="radio" name="task-filter" value="active"><span>To do</span></label><label><input type="radio" name="task-filter" value="completed"><span>Done</span></label></fieldset>
+          <ul id="task-list" class="task-list" aria-live="polite" aria-label="Your assignments"></ul>
+          <div id="task-empty" class="empty-state" hidden><div class="empty-symbol" aria-hidden="true">✓</div><h3>No tasks here yet</h3><p>Add an assignment or choose a different filter to see your tasks.</p></div>
+        </div>
+      </section>
+    </div>
+    <div class="notice" role="note">Your tasks are saved in this browser on this device. They are not shared with other devices or group members.</div>
+  </main>
+  <footer class="site-footer"><div class="container"><span>StudyMate · Student web development project</span><span>Plan with purpose.</span></div></footer>
+</body>
+</html>
