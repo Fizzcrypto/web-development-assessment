@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Plan weekly study sessions with StudyMate.">
+  <title>StudyMate | Study Planner</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body data-page="planner">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <div class="header-inner container">
+      <a class="brand" href="index.html" aria-label="StudyMate home"><span class="brand-symbol" aria-hidden="true">S</span><span>StudyMate</span></a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a><a href="tasks.html">My Tasks</a><a href="planner.html" aria-current="page">Study Planner</a><a href="about.html">About &amp; Help</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main-content" class="container page-main">
+    <div class="page-heading"><p class="eyebrow">WEEKLY STUDY ROUTINE</p><h1>Study Planner</h1><p>Build a balanced week by choosing what to study and when to study it.</p></div>
+    <section class="panel planner-form-panel" aria-labelledby="plan-form-heading">
+      <div class="section-heading"><h2 id="plan-form-heading">Schedule a study session</h2><span class="heading-accent" aria-hidden="true"></span></div>
+      <form id="planner-form" class="planner-form" novalidate>
+        <div class="field"><label for="plan-topic">Study activity <span class="required" aria-label="required">*</span></label><input id="plan-topic" name="topic" maxlength="80" placeholder="e.g. Review JavaScript notes" required></div>
+        <div class="field"><label for="plan-day">Day <span class="required" aria-label="required">*</span></label><select id="plan-day" name="day" required><option value="Monday">Monday</option><option value="Tuesday">Tuesday</option><option value="Wednesday">Wednesday</option><option value="Thursday">Thursday</option><option value="Friday">Friday</option><option value="Saturday">Saturday</option><option value="Sunday">Sunday</option></select></div>
+        <div class="field"><label for="plan-time">Start time <span class="required" aria-label="required">*</span></label><input id="plan-time" name="time" type="time" value="17:00" required></div>
+        <div class="field"><label for="plan-length">Duration</label><select id="plan-length" name="duration"><option value="30">30 minutes</option><option value="45">45 minutes</option><option value="60" selected>1 hour</option><option value="90">1 hour 30 minutes</option><option value="120">2 hours</option></select></div>
+        <div class="planner-form-actions"><p class="form-message" id="planner-form-message" role="status" aria-live="polite"></p><button class="button button-primary" type="submit">Add to my week <span aria-hidden="true">+</span></button></div>
+      </form>
+    </section>
+    <section class="week-section" aria-labelledby="week-heading">
+      <div class="week-heading"><div><p class="eyebrow">YOUR WEEK AT A GLANCE</p><h2 id="week-heading">Weekly schedule</h2></div><div class="week-heading-meta"><span id="session-total" class="count-chip">0 sessions</span><span id="minutes-total" class="count-chip count-chip-light">0 minutes</span></div></div>
+      <div id="week-grid" class="week-grid" aria-live="polite"></div>
+    </section>
+    <div class="notice" role="note">This planner repeats Monday to Sunday; it does not link sessions to a particular calendar week. Sessions are saved only in this browser.</div>
+  </main>
+  <footer class="site-footer"><div class="container"><span>StudyMate · Student web development project</span><span>Plan with purpose.</span></div></footer>
+</body>
+</html>
